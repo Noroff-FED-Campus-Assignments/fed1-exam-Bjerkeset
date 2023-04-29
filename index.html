@@ -9,36 +9,32 @@
       name="keywords"
       content="HTML, CSS, JavaScript, _REPLACE_WITH_KEYWORD_"
     />
-    <meta name="author" content="_YOUR_NAME_" />
+    <meta name="author" content="B.Bjerkeset" />
     <link rel="stylesheet" href="/style.css" />
-    <!-- TODO: Import Javascript -->
+    <script defer type="module" src=""></script>
     <title>_REPLACE_SITE_NAME</title>
   </head>
   <body class="animate__animated animate__fadeIn">
-    <header class="l-header">
-      <h1>Home</h1>
-    </header>
+    <header class="l-header"></header>
 
     <main class="l-main">
-      <section role="search"></section>
-
-      <article role="doc-introduction">
-        <h2>List</h2>
-
-        <img
-          src="/placeholder.jpg"
-          loading="lazy"
-          alt="…"
-          class="u-img hero-image"
-          width="1024"
-          height="1024"
-        />
-
+      <article class="hero__article" role="doc-introduction">
+        <h1>_REPLACE_h1</h1>
         <p>_REPLACE_INTRODUCTION_</p>
       </article>
 
-      <section role="list">
-        <div id="js-list-container">_LOADING_INDICATOR_GOES_HERE_</div>
+      <section class="services__section">
+        <div></div>
+      </section>
+
+      <section class="search__section" role="search">search section</section>
+
+      <section role="list" class="list__section">
+        <div id="js-list-container"></div>
+        <div id="js-loading-indicator" class="loading-indicator">
+          _LOADING_INDICATOR_GOES_HERE_
+        </div>
+        <div id="js-error-container"></div>
       </section>
     </main>
 
