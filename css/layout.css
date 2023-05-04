@@ -8,11 +8,13 @@
 body {
   margin: 0;
   width: 100%;
+  background-image: var(--clr-gradient-background-main);
   min-width: 320px;
   place-items: flex-start;
   min-height: 100vh;
   display: grid;
   grid-template-columns: auto;
+  /* ---------62px-------- */
   grid-template-rows: minmax(62px, auto) 1fr auto;
   grid-template-areas:
     "header"
@@ -25,15 +27,17 @@ body {
   flex-direction: column;
   grid-area: header;
   width: 100%;
-  padding: var(--size-fluid-1);
+  /* height: 9vh; */
+  background-color: black;
 }
 
 .l-main {
   display: flex;
   flex-direction: column;
   grid-area: main;
+  /* height: auto; */
   width: 100%;
-  padding: var(--size-fluid-2);
+  /* padding: var(--size-fluid-2); */
 }
 
 .l-footer {
@@ -41,7 +45,7 @@ body {
   flex-direction: column;
   grid-area: footer;
   width: 100%;
-  padding: var(--size-fluid-1);
+  /* padding: var(--size-fluid-1); */
 }
 
 .l-content {
